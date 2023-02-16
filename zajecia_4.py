@@ -17,3 +17,8 @@ print(num)
 nums = [1,2,3,4,5]
 even = list(filter(lambda x:(x%2==0),nums))
 print(even)
+print()
+for num in nums:
+    print(num)
+print()
+[print(num) for num in nums]
