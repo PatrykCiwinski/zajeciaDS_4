@@ -28,3 +28,11 @@ print(nums_reversed)
 #or
 nums.reverse()
 print(nums)
+
+
+numbers = [3,15,11,6,1,2,3,0,123,24]
+
+print(sorted(numbers))
+numbers.sort()
+print(numbers)
+
