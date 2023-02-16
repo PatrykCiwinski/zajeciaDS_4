@@ -22,3 +22,9 @@ for num in nums:
     print(num)
 print()
 [print(num) for num in nums]
+
+nums_reversed=nums[::-1]
+print(nums_reversed)
+#or
+nums.reverse()
+print(nums)
