@@ -47,12 +47,26 @@
 # print(sorted(zy))
 
 #easier
-lt=[(1,4,7),(4,5,1),(77,2,9),(2,3,5)]
-sums=[]
-for el in lt:
-    s= sum(el)
-    sums.append(s)
+# lt=[(1,4,7),(4,5,1),(77,2,9),(2,3,5)]
+# sums=[]
+# for el in lt:
+#     s= sum(el)
+#     sums.append(s)
+#
+# print()
+# print(sorted(sums))
 
-print()
-print(sorted(sums))
+#Głęboka kopia - różne id, zmieniając element listy pochodnej, nie zminiam  elementu listy źródłowej
+a =[1,2,3,4]
+b = a[:]
+print(id(a))
+print(id(b))
+
+#Płytka kopia -  te same id, zmieniając element listy pochodnej, zminiam  elementu listy źródłowej
+
+a =[1,2,3,4]
+b = a
+print(id(a))
+print(id(b))
+
 
