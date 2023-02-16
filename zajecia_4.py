@@ -57,16 +57,27 @@
 # print(sorted(sums))
 
 #Głęboka kopia - różne id, zmieniając element listy pochodnej, nie zminiam  elementu listy źródłowej
-a =[1,2,3,4]
+"""a =[1,2,3,4]
 b = a[:]
 print(id(a))
-print(id(b))
+print(id(b))"""
 
 #Płytka kopia -  te same id, zmieniając element listy pochodnej, zminiam  elementu listy źródłowej
 
-a =[1,2,3,4]
+"""a =[1,2,3,4]
 b = a
 print(id(a))
-print(id(b))
+print(id(b))"""
+
+#Deep copy list of list - pomimo różnych id ,obie listy są zmieniane gdy zieniamy element jednej listy
+vechicles1 = [['fiat', 'ferrari', 'opel', 'skoda'], ['car', 'bolid', 'gokart']]
+vechicles2 = vechicles1[:]
+
+vechicles2[1].append('rolki')
+vechicles1[1].append('rower')
+print(id(vechicles1))
+print(id(vechicles2))
+
+
 
 
